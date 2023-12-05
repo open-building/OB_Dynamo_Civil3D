@@ -1,0 +1,820 @@
+{
+  "Uuid": "277340f2-5caa-41ac-bd10-22dfdd79ea51",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "FeatureLine_Length",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [
+    {
+      "Id": "7c83c8615e26414491b71e3ffcd60a6e",
+      "Name": "Seleziona FeatureLine",
+      "Type": "hostSelection",
+      "Value": "95276A5",
+      "Description": "Select object in the current document.",
+      "SelectedIndex": 0
+    }
+  ],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "PSET_01_Anagrafico_geografico",
+      "Id": "9fb235a0e1744be7820298e43e46fa32",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "96191c0732094508be8fdd029abcd87c",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "PSET_02_Fisico_geometrico",
+      "Id": "40f3293ff68c4be698fd770b3438b0bb",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "0eb4e27565654f608293b9678330cc0b",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "APPOGGIO",
+      "Id": "4560ee1e1206429b86ceec8ad5e555e7",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "d0c601aa4f2a4e7e857f259e018c0d5b",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "PSET_03_Esercizio",
+      "Id": "3f22592f0fbd4b50b62441b268518400",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "b8eeebf6a2ff4d26b57b4b92c1e4c372",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "PSET_06_Computazione_Tratti_di_rete",
+      "Id": "f495c40495204e1cb35eb5ce2a7322fa",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "852900ded98d444291903c39a9b12bff",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "Autodesk.AutoCAD.DynamoNodes.ObjectSelection, AutoCADNodesUI",
+      "NodeType": "ExtensionNode",
+      "InstanceId": [
+        "95276A5"
+      ],
+      "Id": "7c83c8615e26414491b71e3ffcd60a6e",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "6abbed7b4fc248c9837b1ae9439e54bb",
+          "Name": "Object",
+          "Description": "Object",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "PSET_04_Amministrativo",
+      "Id": "7bdc028b8e41441eb93addb22e626520",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "d9b72048a67b4163b6c56020448686b5",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "PSET_05_Realizzazione",
+      "Id": "84671e6d4e6e4a99885373e0b296573d",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "52d23e282cf74534ad29088a6e5aea8d",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "PSET_07_Computazione_GR",
+      "Id": "4ddd61bb17914c6984ab822d53d41012",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "f57515eb335a49b0b9ed8ddb1e00c6b7",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "NR_LUNGHEZZA_TRATTA",
+      "Id": "d246943e648a41d697d8685468449367",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "3d50e8a022c94160887bbd20d5b64488",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.Civil.DynamoNodes.LandDevelopment.FeatureLine.Length3D",
+      "Id": "85f0784a7eaf4732a3d3047af824972b",
+      "Inputs": [
+        {
+          "Id": "1b49d09e7e83429e87383e7f5ccb9b70",
+          "Name": "featureLine",
+          "Description": "Autodesk.Civil.DynamoNodes.LandDevelopment.FeatureLine",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "7fb89ce7c75c439dbe66727f63010fc6",
+          "Name": "double",
+          "Description": "double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "The FeatureLine Length 3D\n\nFeatureLine.Length3D: double"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleInput, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "InputValue": 3.0,
+      "Id": "44a5260d029147489ee50df38e93c81a",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "94e1c157584c463f945d3559a0d37b38",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a number."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "DSCore.Math.Round@double,int",
+      "Id": "424e343c959d4342b34dc538c5acaf04",
+      "Inputs": [
+        {
+          "Id": "7c65469c67184c01b6cbcdd2c0cab1aa",
+          "Name": "number",
+          "Description": "Number to round\n\ndouble",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "f2b0d06bf7234981b6f2dfe8a50da6ad",
+          "Name": "digits",
+          "Description": "Number of fractional digits in the return value\n\nint",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "9d6070335b8f49d4847113ef1667688c",
+          "Name": "number",
+          "Description": "The number nearest to value that contains a number of fractional digits equal to digits",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Rounds a number to a specified number of fractional digits.\n\nMath.Round (number: double, digits: int): double"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.AutoCAD.DynamoNodes.PropertySetsExtensions.SetPropertyValueByName@Autodesk.AutoCAD.DynamoNodes.Object,string,string,var",
+      "Id": "d72ccd2fb3a2453fa6e427daa2b1707f",
+      "Inputs": [
+        {
+          "Id": "ea7fdd56bfe34413ad14b8dae14bb08f",
+          "Name": "obj",
+          "Description": "The Object\n\nObject",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "816feccef7f440169d3ba2c9d08954ba",
+          "Name": "propertySetName",
+          "Description": "string",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "cbbfcb482d1a4f76b125792958d824a1",
+          "Name": "propertyName",
+          "Description": "string",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "043e59cf41f84bfa95469558677a30f3",
+          "Name": "propertyValue",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4e894273f88b41bfaab8ed411c8567e8",
+          "Name": "Object",
+          "Description": "Object",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Sets the Property value on the Object by name\n\nPropertySetsExtensions.SetPropertyValueByName (obj: Object, propertySetName: string, propertyName: string, propertyValue: var): Object"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.AutoCAD.DynamoNodes.PropertySetsExtensions.SetPropertyValueByName@Autodesk.AutoCAD.DynamoNodes.Object,string,string,var",
+      "Id": "f1541b4b6ef54664b71e6765fe87bdb7",
+      "Inputs": [
+        {
+          "Id": "e5020954a7264452b1ebe7ae23b9c29d",
+          "Name": "obj",
+          "Description": "The Object\n\nObject",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "4b837062439f4187acaa8ff480726e5e",
+          "Name": "propertySetName",
+          "Description": "string",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ba72f99375b64cc19cb6ee3b2e61cb8c",
+          "Name": "propertyName",
+          "Description": "string",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "222e2be0b8e64ff39e623a5b112e4254",
+          "Name": "propertyValue",
+          "Description": "var",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "04ee3118d29a48bd8b2eaf8653d728da",
+          "Name": "Object",
+          "Description": "Object",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Sets the Property value on the Object by name\n\nPropertySetsExtensions.SetPropertyValueByName (obj: Object, propertySetName: string, propertyName: string, propertyValue: var): Object"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.Civil.DynamoNodes.LandDevelopment.FeatureLine.ByObject@Autodesk.Civil.DynamoNodes.CivilObject",
+      "Id": "861da68b7a3245178be999764c9cb6de",
+      "Inputs": [
+        {
+          "Id": "4289582f6cfe4d0f8199df00b5108b7f",
+          "Name": "obj",
+          "Description": "The object\n\nCivilObject",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "45e42b489154420bb17b4ce7d75dbbe8",
+          "Name": "FeatureLine",
+          "Description": "An Arc",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns a Feature Line from an Civil 3D Feature Line object\n\nFeatureLine.ByObject (obj: CivilObject): FeatureLine"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "0eb4e27565654f608293b9678330cc0b",
+      "End": "816feccef7f440169d3ba2c9d08954ba",
+      "Id": "7e4b9bd8805c4b929986b481b8221377"
+    },
+    {
+      "Start": "d0c601aa4f2a4e7e857f259e018c0d5b",
+      "End": "4b837062439f4187acaa8ff480726e5e",
+      "Id": "46ededdf9bce4b7092a46fa785be03f5"
+    },
+    {
+      "Start": "6abbed7b4fc248c9837b1ae9439e54bb",
+      "End": "ea7fdd56bfe34413ad14b8dae14bb08f",
+      "Id": "3c0ca97551f94ae480fac622b1f07f7b"
+    },
+    {
+      "Start": "6abbed7b4fc248c9837b1ae9439e54bb",
+      "End": "e5020954a7264452b1ebe7ae23b9c29d",
+      "Id": "593c3959b3b04758bc3f4c7cae224f5c"
+    },
+    {
+      "Start": "6abbed7b4fc248c9837b1ae9439e54bb",
+      "End": "4289582f6cfe4d0f8199df00b5108b7f",
+      "Id": "7498f034102c4488ab5dce0edacd3cf5"
+    },
+    {
+      "Start": "3d50e8a022c94160887bbd20d5b64488",
+      "End": "ba72f99375b64cc19cb6ee3b2e61cb8c",
+      "Id": "2ec471acd183499cabf6a5e1243f8f87"
+    },
+    {
+      "Start": "3d50e8a022c94160887bbd20d5b64488",
+      "End": "cbbfcb482d1a4f76b125792958d824a1",
+      "Id": "a2d8bae005284f759f3b615732b702d1"
+    },
+    {
+      "Start": "7fb89ce7c75c439dbe66727f63010fc6",
+      "End": "7c65469c67184c01b6cbcdd2c0cab1aa",
+      "Id": "d9c59e9c59e647839cb03e8f5790f0b4"
+    },
+    {
+      "Start": "94e1c157584c463f945d3559a0d37b38",
+      "End": "f2b0d06bf7234981b6f2dfe8a50da6ad",
+      "Id": "c24347e4eecb47058b2d3241ad7df961"
+    },
+    {
+      "Start": "9d6070335b8f49d4847113ef1667688c",
+      "End": "043e59cf41f84bfa95469558677a30f3",
+      "Id": "79b43a84443c4ed6a043911f778f4aa6"
+    },
+    {
+      "Start": "9d6070335b8f49d4847113ef1667688c",
+      "End": "222e2be0b8e64ff39e623a5b112e4254",
+      "Id": "c48de0ee72644234a1a631ec8360fbd7"
+    },
+    {
+      "Start": "45e42b489154420bb17b4ce7d75dbbe8",
+      "End": "1b49d09e7e83429e87383e7f5ccb9b70",
+      "Id": "32b693e2ccd447219887a06fe0df27b0"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Civil3DToolkit",
+      "Version": "1.1.32",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "85f0784a7eaf4732a3d3047af824972b",
+        "d72ccd2fb3a2453fa6e427daa2b1707f",
+        "f1541b4b6ef54664b71e6765fe87bdb7",
+        "861da68b7a3245178be999764c9cb6de"
+      ]
+    }
+  ],
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "2.12",
+      "Data": {}
+    }
+  ],
+  "Author": "None provided",
+  "Linting": {
+    "activeLinter": "None",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [
+    {
+      "NodeId": "d72ccd2f-b3a2-453f-a6e4-27daa2b1707f",
+      "Binding": {
+        "SetPropertyValueByName_InClassDecl-1_InFunctionScope-1_Instance0_d72ccd2f-b3a2-453f-a6e4-27daa2b1707f": "PFNPQVAtRU5WOkVudmVsb3BlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOlNPQVAtRU5DPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VuY29kaW5nLyIgeG1sbnM6U09BUC1FTlY9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3NvYXAvZW52ZWxvcGUvIiB4bWxuczpjbHI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vc29hcC9lbmNvZGluZy9jbHIvMS4wIiBTT0FQLUVOVjplbmNvZGluZ1N0eWxlPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VuY29kaW5nLyI+DQo8U09BUC1FTlY6Qm9keT4NCjxhMTpDYWxsU2l0ZV94MDAyQl9UcmFjZVNlcmlhbGlzZXJIZWxwZXIgaWQ9InJlZi0xIiB4bWxuczphMT0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9jbHIvbnNhc3NlbS9Qcm90b0NvcmUvUHJvdG9Db3JlJTJDJTIwVmVyc2lvbiUzRDIuMTIuMC41NjUwJTJDJTIwQ3VsdHVyZSUzRG5ldXRyYWwlMkMlMjBQdWJsaWNLZXlUb2tlbiUzRG51bGwiPg0KPE51bWJlck9mRWxlbWVudHM+MTwvTnVtYmVyT2ZFbGVtZW50cz4NCjxCYXNlLTBfSGFzRGF0YT50cnVlPC9CYXNlLTBfSGFzRGF0YT4NCjxCYXNlLTBfRGF0YSBpZD0icmVmLTMiPlBGTlBRVkF0UlU1V09rVnVkbVZzYjNCbElIaHRiRzV6T25oemFUMGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TVM5WVRVeFRZMmhsYldFdGFXNXpkR0Z1WTJVaUlIaHRiRzV6T25oelpEMGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TVM5WVRVeFRZMmhsYldFaUlIaHRiRzV6T2xOUFFWQXRSVTVEUFNKb2RIUndPaTh2YzJOb1pXMWhjeTU0Yld4emIyRndMbTl5Wnk5emIyRndMMlZ1WTI5a2FXNW5MeUlnZUcxc2JuTTZVMDlCVUMxRlRsWTlJbWgwZEhBNkx5OXpZMmhsYldGekxuaHRiSE52WVhBdWIzSm5MM052WVhBdlpXNTJaV3h2Y0dVdklpQjRiV3h1Y3pwamJISTlJbWgwZEhBNkx5OXpZMmhsYldGekxtMXBZM0p2YzI5bWRDNWpiMjB2YzI5aGNDOWxibU52WkdsdVp5OWpiSEl2TVM0d0lpQlRUMEZRTFVWT1ZqcGxibU52WkdsdVoxTjBlV3hsUFNKb2RIUndPaTh2YzJOb1pXMWhjeTU0Yld4emIyRndMbTl5Wnk5emIyRndMMlZ1WTI5a2FXNW5MeUkrRFFvOFUwOUJVQzFGVGxZNlFtOWtlVDROQ2p4aE1UcFRaWEpwWVd4cGVtRmliR1ZJWVc1a2JHVWdhV1E5SW5KbFppMHhJaUI0Yld4dWN6cGhNVDBpYUhSMGNEb3ZMM05qYUdWdFlYTXViV2xqY205emIyWjBMbU52YlM5amJISXZibk5oYzNObGJTOUJkWFJ2WkdWemF5NUJkWFJ2UTBGRUxrUjVibUZ0YjBGd2NDNVRaWEoyYVdObGN5OUJZMFI1Ym1GdGIxTmxjblpwWTJWekpUSkRKVEl3Vm1WeWMybHZiaVV6UkRFekxqUXVNakV4T1M0d0pUSkRKVEl3UTNWc2RIVnlaU1V6Ukc1bGRYUnlZV3dsTWtNbE1qQlFkV0pzYVdOTFpYbFViMnRsYmlVelJHNTFiR3dpUGcwS1BITjBjbWx1WjBsRUlHbGtQU0p5WldZdE15SStQQzl6ZEhKcGJtZEpSRDROQ2p3dllURTZVMlZ5YVdGc2FYcGhZbXhsU0dGdVpHeGxQZzBLUEM5VFQwRlFMVVZPVmpwQ2IyUjVQZzBLUEM5VFQwRlFMVVZPVmpwRmJuWmxiRzl3WlQ0TkNnPT08L0Jhc2UtMF9EYXRhPg0KPEJhc2UtMF9IYXNOZXN0ZWREYXRhPmZhbHNlPC9CYXNlLTBfSGFzTmVzdGVkRGF0YT4NCjwvYTE6Q2FsbFNpdGVfeDAwMkJfVHJhY2VTZXJpYWxpc2VySGVscGVyPg0KPC9TT0FQLUVOVjpCb2R5Pg0KPC9TT0FQLUVOVjpFbnZlbG9wZT4NCg=="
+      }
+    },
+    {
+      "NodeId": "f1541b4b-6ef5-4664-b71e-6765fe87bdb7",
+      "Binding": {
+        "SetPropertyValueByName_InClassDecl-1_InFunctionScope-1_Instance0_f1541b4b-6ef5-4664-b71e-6765fe87bdb7": "PFNPQVAtRU5WOkVudmVsb3BlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOlNPQVAtRU5DPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VuY29kaW5nLyIgeG1sbnM6U09BUC1FTlY9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3NvYXAvZW52ZWxvcGUvIiB4bWxuczpjbHI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vc29hcC9lbmNvZGluZy9jbHIvMS4wIiBTT0FQLUVOVjplbmNvZGluZ1N0eWxlPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VuY29kaW5nLyI+DQo8U09BUC1FTlY6Qm9keT4NCjxhMTpDYWxsU2l0ZV94MDAyQl9UcmFjZVNlcmlhbGlzZXJIZWxwZXIgaWQ9InJlZi0xIiB4bWxuczphMT0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9jbHIvbnNhc3NlbS9Qcm90b0NvcmUvUHJvdG9Db3JlJTJDJTIwVmVyc2lvbiUzRDIuMTIuMC41NjUwJTJDJTIwQ3VsdHVyZSUzRG5ldXRyYWwlMkMlMjBQdWJsaWNLZXlUb2tlbiUzRG51bGwiPg0KPE51bWJlck9mRWxlbWVudHM+MTwvTnVtYmVyT2ZFbGVtZW50cz4NCjxCYXNlLTBfSGFzRGF0YT50cnVlPC9CYXNlLTBfSGFzRGF0YT4NCjxCYXNlLTBfRGF0YSBpZD0icmVmLTMiPlBGTlBRVkF0UlU1V09rVnVkbVZzYjNCbElIaHRiRzV6T25oemFUMGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TVM5WVRVeFRZMmhsYldFdGFXNXpkR0Z1WTJVaUlIaHRiRzV6T25oelpEMGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TVM5WVRVeFRZMmhsYldFaUlIaHRiRzV6T2xOUFFWQXRSVTVEUFNKb2RIUndPaTh2YzJOb1pXMWhjeTU0Yld4emIyRndMbTl5Wnk5emIyRndMMlZ1WTI5a2FXNW5MeUlnZUcxc2JuTTZVMDlCVUMxRlRsWTlJbWgwZEhBNkx5OXpZMmhsYldGekxuaHRiSE52WVhBdWIzSm5MM052WVhBdlpXNTJaV3h2Y0dVdklpQjRiV3h1Y3pwamJISTlJbWgwZEhBNkx5OXpZMmhsYldGekxtMXBZM0p2YzI5bWRDNWpiMjB2YzI5aGNDOWxibU52WkdsdVp5OWpiSEl2TVM0d0lpQlRUMEZRTFVWT1ZqcGxibU52WkdsdVoxTjBlV3hsUFNKb2RIUndPaTh2YzJOb1pXMWhjeTU0Yld4emIyRndMbTl5Wnk5emIyRndMMlZ1WTI5a2FXNW5MeUkrRFFvOFUwOUJVQzFGVGxZNlFtOWtlVDROQ2p4aE1UcFRaWEpwWVd4cGVtRmliR1ZJWVc1a2JHVWdhV1E5SW5KbFppMHhJaUI0Yld4dWN6cGhNVDBpYUhSMGNEb3ZMM05qYUdWdFlYTXViV2xqY205emIyWjBMbU52YlM5amJISXZibk5oYzNObGJTOUJkWFJ2WkdWemF5NUJkWFJ2UTBGRUxrUjVibUZ0YjBGd2NDNVRaWEoyYVdObGN5OUJZMFI1Ym1GdGIxTmxjblpwWTJWekpUSkRKVEl3Vm1WeWMybHZiaVV6UkRFekxqUXVNakV4T1M0d0pUSkRKVEl3UTNWc2RIVnlaU1V6Ukc1bGRYUnlZV3dsTWtNbE1qQlFkV0pzYVdOTFpYbFViMnRsYmlVelJHNTFiR3dpUGcwS1BITjBjbWx1WjBsRUlHbGtQU0p5WldZdE15SStQQzl6ZEhKcGJtZEpSRDROQ2p3dllURTZVMlZ5YVdGc2FYcGhZbXhsU0dGdVpHeGxQZzBLUEM5VFQwRlFMVVZPVmpwQ2IyUjVQZzBLUEM5VFQwRlFMVVZPVmpwRmJuWmxiRzl3WlQ0TkNnPT08L0Jhc2UtMF9EYXRhPg0KPEJhc2UtMF9IYXNOZXN0ZWREYXRhPmZhbHNlPC9CYXNlLTBfSGFzTmVzdGVkRGF0YT4NCjwvYTE6Q2FsbFNpdGVfeDAwMkJfVHJhY2VTZXJpYWxpc2VySGVscGVyPg0KPC9TT0FQLUVOVjpCb2R5Pg0KPC9TT0FQLUVOVjpFbnZlbG9wZT4NCg=="
+      }
+    },
+    {
+      "NodeId": "861da68b-7a32-4517-8be9-99764c9cb6de",
+      "Binding": {
+        "ByObject_InClassDecl-1_InFunctionScope-1_Instance0_861da68b-7a32-4517-8be9-99764c9cb6de": "PFNPQVAtRU5WOkVudmVsb3BlIHhtbG5zOnhzaT0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEtaW5zdGFuY2UiIHhtbG5zOnhzZD0iaHR0cDovL3d3dy53My5vcmcvMjAwMS9YTUxTY2hlbWEiIHhtbG5zOlNPQVAtRU5DPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VuY29kaW5nLyIgeG1sbnM6U09BUC1FTlY9Imh0dHA6Ly9zY2hlbWFzLnhtbHNvYXAub3JnL3NvYXAvZW52ZWxvcGUvIiB4bWxuczpjbHI9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vc29hcC9lbmNvZGluZy9jbHIvMS4wIiBTT0FQLUVOVjplbmNvZGluZ1N0eWxlPSJodHRwOi8vc2NoZW1hcy54bWxzb2FwLm9yZy9zb2FwL2VuY29kaW5nLyI+DQo8U09BUC1FTlY6Qm9keT4NCjxhMTpDYWxsU2l0ZV94MDAyQl9UcmFjZVNlcmlhbGlzZXJIZWxwZXIgaWQ9InJlZi0xIiB4bWxuczphMT0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9jbHIvbnNhc3NlbS9Qcm90b0NvcmUvUHJvdG9Db3JlJTJDJTIwVmVyc2lvbiUzRDIuMTIuMC41NjUwJTJDJTIwQ3VsdHVyZSUzRG5ldXRyYWwlMkMlMjBQdWJsaWNLZXlUb2tlbiUzRG51bGwiPg0KPE51bWJlck9mRWxlbWVudHM+MTwvTnVtYmVyT2ZFbGVtZW50cz4NCjxCYXNlLTBfSGFzRGF0YT50cnVlPC9CYXNlLTBfSGFzRGF0YT4NCjxCYXNlLTBfRGF0YSBpZD0icmVmLTMiPlBGTlBRVkF0UlU1V09rVnVkbVZzYjNCbElIaHRiRzV6T25oemFUMGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TVM5WVRVeFRZMmhsYldFdGFXNXpkR0Z1WTJVaUlIaHRiRzV6T25oelpEMGlhSFIwY0RvdkwzZDNkeTUzTXk1dmNtY3ZNakF3TVM5WVRVeFRZMmhsYldFaUlIaHRiRzV6T2xOUFFWQXRSVTVEUFNKb2RIUndPaTh2YzJOb1pXMWhjeTU0Yld4emIyRndMbTl5Wnk5emIyRndMMlZ1WTI5a2FXNW5MeUlnZUcxc2JuTTZVMDlCVUMxRlRsWTlJbWgwZEhBNkx5OXpZMmhsYldGekxuaHRiSE52WVhBdWIzSm5MM052WVhBdlpXNTJaV3h2Y0dVdklpQjRiV3h1Y3pwamJISTlJbWgwZEhBNkx5OXpZMmhsYldGekxtMXBZM0p2YzI5bWRDNWpiMjB2YzI5aGNDOWxibU52WkdsdVp5OWpiSEl2TVM0d0lpQlRUMEZRTFVWT1ZqcGxibU52WkdsdVoxTjBlV3hsUFNKb2RIUndPaTh2YzJOb1pXMWhjeTU0Yld4emIyRndMbTl5Wnk5emIyRndMMlZ1WTI5a2FXNW5MeUkrRFFvOFUwOUJVQzFGVGxZNlFtOWtlVDROQ2p4aE1UcFRaWEpwWVd4cGVtRmliR1ZJWVc1a2JHVWdhV1E5SW5KbFppMHhJaUI0Yld4dWN6cGhNVDBpYUhSMGNEb3ZMM05qYUdWdFlYTXViV2xqY205emIyWjBMbU52YlM5amJISXZibk5oYzNObGJTOUJkWFJ2WkdWemF5NUJkWFJ2UTBGRUxrUjVibUZ0YjBGd2NDNVRaWEoyYVdObGN5OUJZMFI1Ym1GdGIxTmxjblpwWTJWekpUSkRKVEl3Vm1WeWMybHZiaVV6UkRFekxqUXVNakV4T1M0d0pUSkRKVEl3UTNWc2RIVnlaU1V6Ukc1bGRYUnlZV3dsTWtNbE1qQlFkV0pzYVdOTFpYbFViMnRsYmlVelJHNTFiR3dpUGcwS1BITjBjbWx1WjBsRUlHbGtQU0p5WldZdE15SStPVFV5TnpaQk5Ud3ZjM1J5YVc1blNVUStEUW84TDJFeE9sTmxjbWxoYkdsNllXSnNaVWhoYm1Sc1pUNE5Dand2VTA5QlVDMUZUbFk2UW05a2VUNE5Dand2VTA5QlVDMUZUbFk2Ulc1MlpXeHZjR1UrRFFvPTwvQmFzZS0wX0RhdGE+DQo8QmFzZS0wX0hhc05lc3RlZERhdGE+ZmFsc2U8L0Jhc2UtMF9IYXNOZXN0ZWREYXRhPg0KPC9hMTpDYWxsU2l0ZV94MDAyQl9UcmFjZVNlcmlhbGlzZXJIZWxwZXI+DQo8L1NPQVAtRU5WOkJvZHk+DQo8L1NPQVAtRU5WOkVudmVsb3BlPg0K"
+      }
+    }
+  ],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 10000.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.12.0.5650",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -4.9353470802307129,
+      "EyeY": 10.254637718200684,
+      "EyeZ": -6.946162223815918,
+      "LookX": -0.064652919769287109,
+      "LookY": 0.74536228179931641,
+      "LookZ": -1.053837776184082,
+      "UpX": 0.045218639075756073,
+      "UpY": 0.67430269718170166,
+      "UpZ": 0.73706942796707153
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "9fb235a0e1744be7820298e43e46fa32",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -391.36528080694393,
+        "Y": 1780.8508514523667
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "40f3293ff68c4be698fd770b3438b0bb",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -389.78066861933439,
+        "Y": 1848.2629472315461
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "4560ee1e1206429b86ceec8ad5e555e7",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -391.21269686729443,
+        "Y": 1715.5304064916409
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "3f22592f0fbd4b50b62441b268518400",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -389.88403804335189,
+        "Y": 1912.8077506691002
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "f495c40495204e1cb35eb5ce2a7322fa",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -390.4613803111431,
+        "Y": 2112.4663673614059
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Seleziona FeatureLine",
+        "Id": "7c83c8615e26414491b71e3ffcd60a6e",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -389.64270498936116,
+        "Y": 1519.5975558315026
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "7bdc028b8e41441eb93addb22e626520",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -389.29791730802094,
+        "Y": 1977.465670606919
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "84671e6d4e6e4a99885373e0b296573d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -390.18153416982955,
+        "Y": 2044.8406598912334
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "4ddd61bb17914c6984ab822d53d41012",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -389.8514744710476,
+        "Y": 2196.679698298833
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "d246943e648a41d697d8685468449367",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 711.43785044639026,
+        "Y": 1905.3343301216764
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "FeatureLine.Length3D",
+        "Id": "85f0784a7eaf4732a3d3047af824972b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 651.20896011766035,
+        "Y": 1805.0427919367662
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Number",
+        "Id": "44a5260d029147489ee50df38e93c81a",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 909.9821637824607,
+        "Y": 1927.8179567986463
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Math.Round",
+        "Id": "424e343c959d4342b34dc538c5acaf04",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 908.7795604082703,
+        "Y": 1805.4262145515563
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "PropertySetsExtensions.SetPropertyValueByName",
+        "Id": "d72ccd2fb3a2453fa6e427daa2b1707f",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1192.5988127205105,
+        "Y": 1805.6649717984465
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "PropertySetsExtensions.SetPropertyValueByName",
+        "Id": "f1541b4b6ef54664b71e6765fe87bdb7",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1189.9141675666506,
+        "Y": 1977.8465390505462
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "FeatureLine.ByObject",
+        "Id": "861da68b7a3245178be999764c9cb6de",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 419.22488585271049,
+        "Y": 1806.2694846997565
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "3269be4f7dc74bf9a649553af605d18b",
+        "Title": "INPUT",
+        "Nodes": [
+          "7c83c8615e26414491b71e3ffcd60a6e"
+        ],
+        "Left": -399.64270498936116,
+        "Top": 1466.5975558315026,
+        "Width": 215.0,
+        "Height": 172.0,
+        "FontSize": 36.0,
+        "InitialTop": 1519.5975558315026,
+        "InitialHeight": 145.0,
+        "TextblockHeight": 43.0,
+        "Background": "#FFFFAA45"
+      },
+      {
+        "Id": "a28ba4fdd4a5490aa3db27f4b6403fca",
+        "Title": "PSET",
+        "Nodes": [
+          "9fb235a0e1744be7820298e43e46fa32",
+          "40f3293ff68c4be698fd770b3438b0bb",
+          "4560ee1e1206429b86ceec8ad5e555e7",
+          "3f22592f0fbd4b50b62441b268518400",
+          "f495c40495204e1cb35eb5ce2a7322fa",
+          "7bdc028b8e41441eb93addb22e626520",
+          "84671e6d4e6e4a99885373e0b296573d",
+          "4ddd61bb17914c6984ab822d53d41012"
+        ],
+        "Left": -401.36528080694393,
+        "Top": 1662.5304064916409,
+        "Width": 235.90390049580083,
+        "Height": 602.14929180719218,
+        "FontSize": 36.0,
+        "InitialTop": 1715.5304064916409,
+        "InitialHeight": 626.14929180719218,
+        "TextblockHeight": 43.0,
+        "Background": "#FF71C6A8"
+      },
+      {
+        "Id": "feacfe3afd3e4fa08017b1cf1e63eee3",
+        "Title": "LENGTH",
+        "Nodes": [
+          "d246943e648a41d697d8685468449367",
+          "85f0784a7eaf4732a3d3047af824972b",
+          "424e343c959d4342b34dc538c5acaf04",
+          "44a5260d029147489ee50df38e93c81a",
+          "f1541b4b6ef54664b71e6765fe87bdb7",
+          "d72ccd2fb3a2453fa6e427daa2b1707f",
+          "861da68b7a3245178be999764c9cb6de"
+        ],
+        "Left": 409.22488585271049,
+        "Top": 1752.0427919367662,
+        "Width": 1124.3739268678,
+        "Height": 396.80374711378,
+        "FontSize": 36.0,
+        "InitialTop": 1805.0427919367662,
+        "InitialHeight": 317.80374711378,
+        "TextblockHeight": 43.0,
+        "Background": "#FFFFFFFF"
+      }
+    ],
+    "X": 281.5160723446437,
+    "Y": -122.07854646228907,
+    "Zoom": 0.3111523471959815
+  }
+}

@@ -1,0 +1,705 @@
+{
+  "Uuid": "11698ef6-18fc-4655-a103-6c550c3c234d",
+  "IsCustomNode": false,
+  "Description": "",
+  "Name": "Polyline_to_FeatureLine",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [
+    {
+      "Id": "8b3c8ce996764c5e853c15f9dbf2e913",
+      "Name": "Select Polylines",
+      "Type": "hostSelection",
+      "Value": "29A30,29A2F,29A2E,29A2D,29A2C",
+      "Description": "Returns a selection of objects",
+      "SelectedIndex": 0
+    },
+    {
+      "Id": "091b81307a1c4a77b214d7adadb75d7b",
+      "Name": "Select Surface",
+      "Type": "dropdownSelection",
+      "Value": "2687_Superficie Punti",
+      "Description": "Selects a Surface in the document",
+      "SelectedIndex": 0
+    },
+    {
+      "Id": "b846c678a28c47af80165f27c950de53",
+      "Name": "Set Layer",
+      "Type": "string",
+      "Value": "C-TOPO-FEAT",
+      "Description": "Creates a string.",
+      "SelectedIndex": 0
+    },
+    {
+      "Id": "6473dcae7ab848a5bd0fb9f8b792dd12",
+      "Name": "Set Name",
+      "Type": "string",
+      "Value": "Feature Line",
+      "Description": "Creates a string.",
+      "SelectedIndex": 0
+    }
+  ],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "Autodesk.AutoCAD.DynamoNodes.ObjectsSelection, Autodesk.Civil3DToolkitUI",
+      "NodeType": "ExtensionNode",
+      "InstanceId": [
+        "29A30",
+        "29A2F",
+        "29A2E",
+        "29A2D",
+        "29A2C"
+      ],
+      "Id": "8b3c8ce996764c5e853c15f9dbf2e913",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "a2224eb423f44abebc83a2a0c341cb43",
+          "Name": "Objects",
+          "Description": "Objects",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.Civil.DynamoNodes.LandDevelopment.FeatureLine.ByPolyCurve@string,Autodesk.DesignScript.Geometry.PolyCurve,Autodesk.Civil.DynamoNodes.LandDevelopment.Site,string,Autodesk.AutoCAD.DynamoNodes.Block",
+      "Id": "a3d8cdc0794e4cedb82635ee098efa84",
+      "Inputs": [
+        {
+          "Id": "ef9153c3f7f74152bed518eb43d88183",
+          "Name": "name",
+          "Description": "The FeatureLine name\n\nstring",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "7d9ce779474c45d8a32399c92f9f1bdb",
+          "Name": "curve",
+          "Description": "The PolyCurve\n\nPolyCurve",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "67221239db8148fb975b2bf85542dc31",
+          "Name": "site",
+          "Description": "The site of the FeatureLine\n\nSite\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "ab7e4a1baf2c482d9c3c388d931e857c",
+          "Name": "layer",
+          "Description": "The layer of the FeatureLine\n\nstring\nDefault value : \"0\"",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6f83a6be41e24413a0edbe9786ebd91d",
+          "Name": "block",
+          "Description": "The target block\n\nBlock\nDefault value : null",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "b06387814c8d4580b8cf3e37818d69b3",
+          "Name": "FeatureLine",
+          "Description": "A FeatureLine",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "CrossProduct",
+      "Description": "Creates a FeatureLine via a Dynamo PolyCurve\n\nFeatureLine.ByPolyCurve (name: string, curve: PolyCurve, site: Site = null, layer: string = \"0\", block: Block = null): FeatureLine"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.AutoCAD.DynamoNodes.Object.Geometry",
+      "Id": "c86d355556da4004a3c4b43a189f9b56",
+      "Inputs": [
+        {
+          "Id": "f2e0c71cf0434d9f8dd84a4474b08039",
+          "Name": "object",
+          "Description": "Autodesk.AutoCAD.DynamoNodes.Object",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "e604a7a6e2ef476aa09b313d58db3133",
+          "Name": "Geometry",
+          "Description": "Geometry",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get Dynamo representation of this object.\n\nObject.Geometry: Geometry"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.Civil.DynamoNodes.LandDevelopment.Site.GetSites@Autodesk.AutoCAD.DynamoNodes.Document",
+      "Id": "23ff5925b49146fdb8f0392bcd255735",
+      "Inputs": [
+        {
+          "Id": "51991d6aadcb4d9dbfe7603ea0b80f84",
+          "Name": "document",
+          "Description": "The current Document\n\nDocument",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "6cdda9aa25ff4208b564e6843bf2d862",
+          "Name": "Site[]",
+          "Description": "Site[]",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns the sites in the Document\n\nSite.GetSites (document: Document): Site[]"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.AutoCAD.DynamoNodes.Document.Current",
+      "Id": "db53a175f4034f5cb20ba2058df51a5d",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "145c3b49af1249fbb96fd3ff4e3313b9",
+          "Name": "Document",
+          "Description": "Document",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Get the current AutoCAD document.\n\nDocument.Current: Document"
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Autodesk.Civil.DynamoNodes.LandDevelopment.FeatureLine.SetElevationFromSurface@Autodesk.Civil.DynamoNodes.Surface,bool,double",
+      "Id": "6d30f5948f7f412ca2c5483d1958f5e7",
+      "Inputs": [
+        {
+          "Id": "ce4d1c024d8b4c5099be8e8267a94050",
+          "Name": "featureLine",
+          "Description": "Autodesk.Civil.DynamoNodes.LandDevelopment.FeatureLine",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "03cd15c5465545889cbd289d0ac9c48c",
+          "Name": "surface",
+          "Description": "The surface\n\nSurface",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "c6c578bd8c0b45af99cce906c1d8fa9a",
+          "Name": "includeIntermediate",
+          "Description": "If true calculates the intermediate points on the Surface\n\nbool",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "928e49df2a0f42e5baed5428ae9bcc11",
+          "Name": "relElevation",
+          "Description": "The relative elevation from the Surface\n\ndouble\nDefault value : 0",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "19655ee9c2e34546bdf7b2e075d78f8a",
+          "Name": "FeatureLine",
+          "Description": "FeatureLine",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Sets the FeatureLine Elevation from a Surface\n\nFeatureLine.SetElevationFromSurface (surface: Surface, includeIntermediate: bool, relElevation: double = 0): FeatureLine"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
+      "NodeType": "BooleanInputNode",
+      "InputValue": false,
+      "Id": "893b83eb96f34e25baded7077347b235",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "2d0cb92ae555409e950d124eb506f68f",
+          "Name": "",
+          "Description": "Boolean",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Selection between a true and false."
+    },
+    {
+      "ConcreteType": "Autodesk.Civil3D.DynamoNodes.SurfaceNamesDropDown, Autodesk.Civil3DToolkitUI",
+      "SelectedIndex": 0,
+      "SelectedString": "2687_Superficie Punti",
+      "NodeType": "ExtensionNode",
+      "Id": "091b81307a1c4a77b214d7adadb75d7b",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "92cbf02f0547420a8c4ca5ac462ce81b",
+          "Name": "Surface",
+          "Description": "Surface",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Selects a Surface in the document"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "C-TOPO-FEAT",
+      "Id": "b846c678a28c47af80165f27c950de53",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "004fa17169e048f8a3d248788d2d0e7b",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "Feature Line",
+      "Id": "6473dcae7ab848a5bd0fb9f8b792dd12",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "2c08918954af41cd8c8446729c5afc35",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "Camber.AutoCAD.Objects.Polyline.PruneDuplicateVertices@Autodesk.AutoCAD.DynamoNodes.Polyline,bool,double",
+      "Id": "57dc14f81587485b870a49e95a6a0cd9",
+      "Inputs": [
+        {
+          "Id": "66178a06de3142239239de942810fd1d",
+          "Name": "polyline",
+          "Description": "Polyline",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "dfe0c2d67095447bb96d0a1753f66822",
+          "Name": "keepFirst",
+          "Description": "If true, the first duplicate vertex is preserved from each group of duplicates. If false, the last duplicate vertex is preserved.\n\nbool\nDefault value : true",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "44ecd295858c4534aefd0aa507253087",
+          "Name": "tolerance",
+          "Description": "Two vertices are considered equal if the distance between them is less than the tolerance.\n\ndouble\nDefault value : 0.001",
+          "UsingDefaultValue": true,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "2da75b644671495286d8f65abe7bc882",
+          "Name": "Polyline",
+          "Description": "Polyline",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Removes duplicate vertices from a Polyline. If the Polyline is closed, the shared start/end vertex is not removed.\n\nPolyline.PruneDuplicateVertices (polyline: Polyline, keepFirst: bool = true, tolerance: double = 0.001): Polyline"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.BoolSelector, CoreNodeModels",
+      "NodeType": "BooleanInputNode",
+      "InputValue": true,
+      "Id": "aa4b01c14fdf4d02abff1c8632736ad5",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "69366df13b2e49e5ba3ca2e643549416",
+          "Name": "",
+          "Description": "Boolean",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Selection between a true and false."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.DoubleInput, CoreNodeModels",
+      "NodeType": "NumberInputNode",
+      "NumberType": "Double",
+      "InputValue": 0.0,
+      "Id": "a92e0c01bf7a4efdbd217cbaaf5689c1",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "866c4124169b443595aa137e65353d80",
+          "Name": "",
+          "Description": "Double",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a number."
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "a2224eb423f44abebc83a2a0c341cb43",
+      "End": "66178a06de3142239239de942810fd1d",
+      "Id": "b64c62724ef14d5588560dda7f12a4d5"
+    },
+    {
+      "Start": "b06387814c8d4580b8cf3e37818d69b3",
+      "End": "ce4d1c024d8b4c5099be8e8267a94050",
+      "Id": "eb3ce34838aa4f2dafd263da4a177591"
+    },
+    {
+      "Start": "e604a7a6e2ef476aa09b313d58db3133",
+      "End": "7d9ce779474c45d8a32399c92f9f1bdb",
+      "Id": "ffae90a58ba446e0a7cac78aaa0aed4d"
+    },
+    {
+      "Start": "6cdda9aa25ff4208b564e6843bf2d862",
+      "End": "67221239db8148fb975b2bf85542dc31",
+      "Id": "6d316d7cc95f4f349814a73166095ef2"
+    },
+    {
+      "Start": "145c3b49af1249fbb96fd3ff4e3313b9",
+      "End": "51991d6aadcb4d9dbfe7603ea0b80f84",
+      "Id": "d7842bac48994b47b00e70404da5edba"
+    },
+    {
+      "Start": "2d0cb92ae555409e950d124eb506f68f",
+      "End": "c6c578bd8c0b45af99cce906c1d8fa9a",
+      "Id": "8a7489f3408c4a878c85e5c1447f7b0c"
+    },
+    {
+      "Start": "92cbf02f0547420a8c4ca5ac462ce81b",
+      "End": "03cd15c5465545889cbd289d0ac9c48c",
+      "Id": "b7f878192d7e4fa795571903d3c08dd1"
+    },
+    {
+      "Start": "004fa17169e048f8a3d248788d2d0e7b",
+      "End": "ab7e4a1baf2c482d9c3c388d931e857c",
+      "Id": "0e5367fa31154aa8b8005ceed924ea95"
+    },
+    {
+      "Start": "2c08918954af41cd8c8446729c5afc35",
+      "End": "ef9153c3f7f74152bed518eb43d88183",
+      "Id": "9238f26886744422ad00f047bb40219b"
+    },
+    {
+      "Start": "2da75b644671495286d8f65abe7bc882",
+      "End": "f2e0c71cf0434d9f8dd84a4474b08039",
+      "Id": "428e19640a0e47a2af59c4ec4e6b6f13"
+    },
+    {
+      "Start": "69366df13b2e49e5ba3ca2e643549416",
+      "End": "dfe0c2d67095447bb96d0a1753f66822",
+      "Id": "4ddca53f32cd44eb801f9ff4164f3a8e"
+    },
+    {
+      "Start": "866c4124169b443595aa137e65353d80",
+      "End": "44ecd295858c4534aefd0aa507253087",
+      "Id": "7b4be8a8e29e4d409f9eecf1c696e0df"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "Civil3DToolkit",
+      "Version": "1.1.32",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "8b3c8ce996764c5e853c15f9dbf2e913",
+        "a3d8cdc0794e4cedb82635ee098efa84",
+        "23ff5925b49146fdb8f0392bcd255735",
+        "6d30f5948f7f412ca2c5483d1958f5e7",
+        "091b81307a1c4a77b214d7adadb75d7b"
+      ]
+    },
+    {
+      "Name": "Camber",
+      "Version": "4.2.4",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "57dc14f81587485b870a49e95a6a0cd9"
+      ]
+    }
+  ],
+  "Thumbnail": "",
+  "GraphDocumentationURL": null,
+  "ExtensionWorkspaceData": [
+    {
+      "ExtensionGuid": "28992e1d-abb9-417f-8b1b-05e053bee670",
+      "Name": "Properties",
+      "Version": "2.12",
+      "Data": {}
+    }
+  ],
+  "Author": "",
+  "Linting": {
+    "activeLinter": "None",
+    "activeLinterId": "7b75fb44-43fd-4631-a878-29f4d5d8399a",
+    "warningCount": 0,
+    "errorCount": 0
+  },
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 10000.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.12.0.5650",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -5.0608983039855957,
+      "EyeY": 9.9541072845458984,
+      "EyeZ": -5.0667448043823242,
+      "LookX": 0.0608983039855957,
+      "LookY": 1.0458927154541016,
+      "LookZ": -2.9332551956176758,
+      "UpX": -0.010999456979334354,
+      "UpY": 0.84804815053939819,
+      "UpZ": 0.529805064201355
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Select Polylines",
+        "Id": "8b3c8ce996764c5e853c15f9dbf2e913",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": -111.67190724567371,
+        "Y": 391.17567815853374
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "FeatureLine.ByPolyCurve",
+        "Id": "a3d8cdc0794e4cedb82635ee098efa84",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 950.408108774938,
+        "Y": 366.0
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Object.Geometry",
+        "Id": "c86d355556da4004a3c4b43a189f9b56",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 632.17563130656629,
+        "Y": 392.35713191197789
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Site.GetSites",
+        "Id": "23ff5925b49146fdb8f0392bcd255735",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 636.8862338858263,
+        "Y": 485.52645965722138
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Document.Current",
+        "Id": "db53a175f4034f5cb20ba2058df51a5d",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 373.17471217001776,
+        "Y": 540.48566679256328
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "FeatureLine.SetElevationFromSurface",
+        "Id": "6d30f5948f7f412ca2c5483d1958f5e7",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1460.9122398746294,
+        "Y": 365.73168358721983
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Boolean",
+        "Id": "893b83eb96f34e25baded7077347b235",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1282.0993693757039,
+        "Y": 520.39680060488081
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Select Surface",
+        "Id": "091b81307a1c4a77b214d7adadb75d7b",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 1212.1601516330522,
+        "Y": 428.59103067035846
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Set Layer",
+        "Id": "b846c678a28c47af80165f27c950de53",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 732.80627733477638,
+        "Y": 581.37370029152976
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Set Name",
+        "Id": "6473dcae7ab848a5bd0fb9f8b792dd12",
+        "IsSetAsInput": true,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 728.10852645879436,
+        "Y": 307.791862586454
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Polyline.PruneDuplicateVertices",
+        "Id": "57dc14f81587485b870a49e95a6a0cd9",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 370.58064065914266,
+        "Y": 391.98090599384665
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Boolean",
+        "Id": "aa4b01c14fdf4d02abff1c8632736ad5",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 196.54940281448307,
+        "Y": 449.95482141139752
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Number",
+        "Id": "a92e0c01bf7a4efdbd217cbaaf5689c1",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 263.98042634030531,
+        "Y": 512.003029028738
+      }
+    ],
+    "Annotations": [],
+    "X": 170.57720602731359,
+    "Y": 43.149108099033356,
+    "Zoom": 0.70223673434803691
+  }
+}
